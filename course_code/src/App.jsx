@@ -1,7 +1,8 @@
 
 import { useState } from "react"
-import {Button} from "@mui/material"
-
+import {Button,Box} from "@mui/material"
+import BasicButtonsJs from './components/js/BasicButtonsJs'
+import BasicMenu from './components/js/BasicMenu'
 export default function App() {
 
   const [open,setOpen] = useState(false);
@@ -29,7 +30,7 @@ export default function App() {
     <div className="App">
     <h1>Hello CodeSandbox</h1>
     <h2 style={{color:"red",marginBottom:"140px"}}>Start editing to see some magic happen!</h2>
-    <Button 
+    {/* <Button 
     color="primary" 
     variant="contained" 
     sx={{
@@ -50,7 +51,7 @@ export default function App() {
       // zIndex:"modal"
       zIndex:(theme) => theme.zIndex["modal"] + 1,
       }}>
-    My Button</Button>
+    My Button</Button> */}
     <Button
     onClick={() => setOpen(!open)} 
     sx={[
@@ -58,7 +59,8 @@ export default function App() {
         borderColor:(theme) => theme.typography.h1.color,
         borderStyle:"solid",
         borderWidth:"2px",
-        // width:1,
+        // width:1/4,
+        width:1,
         maxWidth:"xl",
         borderRadius:2,
         boxShadow:20,
@@ -77,7 +79,16 @@ export default function App() {
         fontSize:"2rem",
       },
       ]}>
-    My Button2</Button>
+    My Button2
+    <p>My paragraph Text</p>
+    <h1>my h1 text</h1>
+    </Button>
+    <Box sx={{marginTop:"100px"}}>
+      <BasicButtonsJs />
+    </Box> 
+    <Box sx={{marginTop:"100px"}}>
+      <BasicMenu />
+    </Box> 
   </div>
   )
 }
