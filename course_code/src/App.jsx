@@ -1,8 +1,9 @@
 
 import { useState } from "react"
-import {Button,Box} from "@mui/material"
+import {Button,Box, GlobalStyles} from "@mui/material"
 import BasicButtonsJs from './components/js/BasicButtonsJs'
 import BasicMenu from './components/js/BasicMenu'
+import GlobalStyles02 from './components/js/GlobalStyles02'
 export default function App() {
 
   const [open,setOpen] = useState(false);
@@ -88,6 +89,9 @@ export default function App() {
     </Box> 
     <Box sx={{marginTop:"100px"}}>
       <BasicMenu />
+    </Box> 
+    <Box sx={{marginTop:"100px"}}>
+      <GlobalStyles02 />
     </Box> 
   </div>
   )

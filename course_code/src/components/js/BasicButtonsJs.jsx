@@ -2,8 +2,9 @@ import * as React from 'react';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import { useState } from 'react';
-import {styled} from '@mui/material/styles'
-import {blueTextClass02} from './styles'
+import {styled} from '@mui/material/styles';
+import {blueTextClass02} from './styles';
+
 
 const MyReusableComponent = props => {
   return (
@@ -41,6 +42,8 @@ export default function BasicButtonsJs() {
       <Button  sx={blueTextClass02} variant="contained">blueTextClass02</Button>
       <MyStyleButton>Test Button</MyStyleButton>
       <MyReusableComponent>Test Button</MyReusableComponent> 
+      <Button  variant="contained" sx={{typography:"blueTextClass03"}}>GlobalStyles</Button>
+      <Button  variant="text" >GlobalStyles02</Button>
     </Stack>
   );
 }
