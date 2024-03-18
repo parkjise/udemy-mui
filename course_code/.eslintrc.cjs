@@ -17,6 +17,7 @@ module.exports = {
       { allowConstantExport: true },
     ],
     'no-unused-vars': 'off',
-    "no-unescaped-entities": "off"
+    "no-unescaped-entities": "off",
+    "react/prop-types": "off"
   },
 }

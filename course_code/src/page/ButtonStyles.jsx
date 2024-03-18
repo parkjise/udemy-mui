@@ -1,11 +1,11 @@
 
 import { useState } from "react"
 import {Button,Box, GlobalStyles,Checkbox} from "@mui/material"
-import BasicButtonsJs from './components/js/BasicButtonsJs'
-import BasicMenu from './components/js/BasicMenu'
-import GlobalStyles02 from './components/js/GlobalStyles02'
+import BasicButtonsJs from '../components/js/BasicButtonsJs'
+import BasicMenu from '../components/js/BasicMenu'
+import GlobalStyles02 from '../components/js/GlobalStyles02'
 import {styled} from "@mui/material/styles"
-import {blueTextClass02} from './components/js/styles';
+import {blueTextClass02} from '../components/js/styles';
 const CustomButton = styled(Button)(({theme}) => theme.unstable_sx({
     [`&.${blueTextClass02.contained}`]:{
       borderColor:(theme) => theme.typography.h1.color,
