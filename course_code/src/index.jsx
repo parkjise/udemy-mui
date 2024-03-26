@@ -5,6 +5,7 @@ import ButtonStyles from './page/ButtonStyles.jsx'
 import RadioButtonsGroup from './page/RadioButtonsGroup.jsx'
 import { createTheme,ThemeProvider } from '@mui/material'
 import AutocompleteEx from './page/AutocompleteEx.jsx'
+import Autocompletes from './page/Autocompletes.jsx'
 
 const theme = createTheme({
   palette:{
@@ -26,7 +27,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       {/* <App /> */}
       {/* <ButtonStyles /> */}
       {/* <RadioButtonsGroup/> */}
-      <AutocompleteEx/>
+      {/* <AutocompleteEx/> */}
+      <Autocompletes/>
     </ThemeProvider>
   </React.StrictMode>,
 )
