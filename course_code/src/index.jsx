@@ -6,6 +6,9 @@ import RadioButtonsGroup from './page/RadioButtonsGroup.jsx'
 import { createTheme,ThemeProvider } from '@mui/material'
 import AutocompleteEx from './page/AutocompleteEx.jsx'
 import Autocompletes from './page/Autocompletes.jsx'
+import AutocompletesCustomization from './page/AutocompletesCustomization.jsx'
+import ButtonMui from './page/ButtonMui.jsx'
+import CheckBoxMui from './page/CheckBoxMui.jsx'
 
 const theme = createTheme({
   palette:{
@@ -28,7 +31,10 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       {/* <ButtonStyles /> */}
       {/* <RadioButtonsGroup/> */}
       {/* <AutocompleteEx/> */}
-      <Autocompletes/>
+      {/* <Autocompletes/> */}
+      {/* <AutocompletesCustomization/> */}
+      {/* <ButtonMui/> */}
+      <CheckBoxMui/>
     </ThemeProvider>
   </React.StrictMode>,
 )
