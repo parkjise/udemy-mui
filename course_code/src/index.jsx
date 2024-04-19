@@ -9,6 +9,7 @@ import Autocompletes from './page/Autocompletes.jsx'
 import AutocompletesCustomization from './page/AutocompletesCustomization.jsx'
 import ButtonMui from './page/ButtonMui.jsx'
 import CheckBoxMui from './page/CheckBoxMui.jsx'
+import FabStyle from './page/FabStyle.jsx'
 
 const theme = createTheme({
   palette:{
@@ -34,7 +35,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       {/* <Autocompletes/> */}
       {/* <AutocompletesCustomization/> */}
       {/* <ButtonMui/> */}
-      <CheckBoxMui/>
+      {/* <CheckBoxMui/> */}
+      <FabStyle/>
     </ThemeProvider>
   </React.StrictMode>,
 )
